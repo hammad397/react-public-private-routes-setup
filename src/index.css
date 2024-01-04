@@ -1,0 +1,139 @@
+html {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.login-wrapper {
+  background: #ddd;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    display: block;
+    width: 25vw;
+    margin-bottom: 50px;
+  }
+
+  label {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  button {
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background: black;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: rgb(27, 27, 27);
+    }
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    input {
+      border: none;
+      outline: none;
+      padding: 12px;
+      width: 25vw;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+  }
+}
+
+main {
+  padding: 10px;
+}
+
+.header-wrapper {
+  background: #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+.sidebar-wrapper {
+  width: 200px;
+  background: #ddd;
+  height: 100vh;
+  padding: 0.7rem 10px;
+
+  ul {
+    li {
+      list-style: none;
+      cursor: pointer;
+      margin-bottom: 0.4rem;
+
+      a {
+        text-decoration: none;
+        color: black;
+        border-radius: 6px;
+        padding: 7px;
+        display: block;
+        transition: 0.3s;
+
+        span {
+          text-transform: capitalize;
+        }
+      }
+
+      &:hover {
+        a {
+          background-color: black;
+          color: white;
+        }
+      }
+
+      .active-menu {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+}
+
+.footer-wrapper {
+  background: #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+.layout-wrapper {
+  width: 100vw;
+  height: 100vh;
+
+  .center-data {
+    display: flex;
+    overflow-x: hidden;
+  }
+}
+
+.not-found {
+  background: #ddd;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
